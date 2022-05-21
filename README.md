@@ -6,7 +6,7 @@ Took way longer to make than it would have taken to just add them manually, ~but
 
 ### Usage
 
-Run the jar via your IDE, Gradle or with a built jar using `java -jar jijer-1.0-all.jar` and follow the instructions.
+Run the jar via your IDE, Gradle or with a built jar using `java -jar jijer-1.1-all.jar` and follow the instructions.
 
 You will first be asked for the path to the mod you want to add jars to, and then you will be asked for what mods to add.
 
@@ -21,4 +21,4 @@ It's a regular Gradle project, just import it into your IDE like any other one.
 ### OSS
 
 JiJer is open source software under the GPLv3 license.
-It uses the [mjson](https://github.com/bolerio/mjson) library by bolerio to parse and add to the mod json, under Apache 2.0.
+It uses the [mjson](https://github.com/bolerio/mjson) library by bolerio to parse and add to the mod json, under Apache 2.0. Currently using the fork in PR 35 in order to keep the order of objects in the mod json file.

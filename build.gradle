@@ -4,14 +4,15 @@ plugins {
 }
 
 group = 'altrisi.dev.jijer'
-version = '1.0'
+version = '1.1'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-	implementation ('org.sharegov:mjson:1.4.1') {
+	implementation ('com.github.bolerio:mjson:PR35-SNAPSHOT') {
 		transitive false
 	}
 }
@@ -23,12 +24,12 @@ tasks.withType(JavaCompile) {
 
 tasks.withType(Jar) {
     manifest {
-        attributes 'Main-Class' : 'altrisi.dev.jijer.Main'
+        attributes 'Main-Class' : 'altrisi.dev.jijer.JijerMain'
     }
 }
 
 tasks {
     build {
-        //dependsOn(shadowJar)
+        dependsOn(shadowJar)
     }
 }
