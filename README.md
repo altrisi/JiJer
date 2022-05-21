@@ -2,11 +2,11 @@
 
 A small tool to easily JiJ jars into a Fabric mod.
 
-Took way longer to make than it would have taken to just add them manually, but it was totally worth it.
+Took way longer to make than it would have taken to just add them manually, ~but it was totally worth it~.
 
 ### Usage
 
-Run the jar via your IDE, Gradle or with a built jar using `java -jar jijer-1.0.0.jar` and follow the instructions.
+Run the jar via your IDE, Gradle or with a built jar using `java -jar jijer-1.0-all.jar` and follow the instructions.
 
 You will first be asked for the path to the mod you want to add jars to, and then you will be asked for what mods to add.
 
