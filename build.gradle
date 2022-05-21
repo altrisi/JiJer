@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+}
+
+group = 'altrisi.dev.jijer'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	implementation ('org.sharegov:mjson:1.4.1') {
+		transitive false
+	}
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.incremental = true
+}
+
+tasks.withType(Jar) {
+    manifest {
+        attributes 'Main-Class' : 'altrisi.dev.jijer.Main'
+    }
+}
+
+tasks {
+    build {
+        //dependsOn(shadowJar)
+    }
+}
